@@ -21,10 +21,10 @@ To run the app locally:
 
 2. Start the PHP built-in server:
    ```
-   php -S localhost:8000
+   php -S localhost:8080
    ```
 
-3. Open your web browser and navigate to `http://localhost:8000`.
+3. Open your web browser and navigate to `http://localhost:8080`.
 
 ## Usage
 
