@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    background: linear-gradient(to right, #a1ffce, #7CACF8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.wrapper {
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha (last) value */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; 
+    height: 80vh;
+    
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #66b3ff;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+.tab.current-tab {
+    background-color: #66b3ff;
+    color: white;
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3); /* Adjust the alpha value (last parameter) for transparency */
+}
+
+.sub-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.grant-location-container.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 60%;
+    max-width: 300px; /* Adjust as needed */
+}
+
+.form-container button {
+    padding: 10px 20px;
+    background-color: #66b3ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loading-container {
+    display: none;
+    margin-top: 20px;
+}
+
+.loading-container.active {
+    display: block;
+}
+
+.user-info-container {
+    display: none;
+    margin-top: 20px;
+}
+
+.user-info-container.active {
+    display: block;
+}
+
+.para-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.parameter {
+    text-align: center;
+    margin: 10px; 
+}
+
+.parameter p {
+    margin-top: 5px;
+}
+
+.noData {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+    color: red;
+}
+
+.noData.active {
+    display: block;
+}
